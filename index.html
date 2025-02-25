@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steven's Web Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="/web_portfolio/public/favicon.png">
+
+  </head>
+  <body>
+    <header>
+        <a href=""><img class="logo" src="/web_portfolio/public/icon.png" /></a>
+        <nav>
+            <a href="#project-section"><h3>Projects</h3></a>
+            <a target="_blank" href="/web_portfolio/public/2025_Resume.pdf"><h3>Resume</h3></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="intro-header">
+                <h1>Hello! I'm Steven...</h1>
+                <p>Software Developer</p>
+            </div>
+            <h5 class="intro-description">
+                Based in NYC, I love creating dynamic web applications.. Outside of coding, I spend my time playing ping pong, gaming, and cooking while working on projects that are both fun and practical.
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a href="mailto:stevenliu595@gmail.com">
+                    <i class="fa-solid fa-envelope fa-lg"></i>
+                </a>
+                <a target="_blank" href="https://github.com/stevenliu595">
+                    <i class="fa-brands fa-github fa-lg"></i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/stevenliu595/">
+                    <i class="fa-brands fa-linkedin fa-lg"></i>
+                </a>
+            </div>
+
+            <div id="play-game">
+                <button onclick="playGame()">Play Game 👀</button>
+            </div>
+            <div style="display: none;" class="color-div">
+                <h4>Pick a color</h4>
+                <p style="display: none;">Look at what you’ve done!! 😧</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Languages</td>
+                        <td>JavaScript | Java | Python</td>
+                    </tr>
+                    <tr>
+                        <td>Frontend</td>
+                        <td>ReactJS | NextJS | TailwindCSS | Angular | SvelteKit</td>
+                    </tr>                   
+                    <tr>
+                        <td>Backend</td>
+                        <td>NodeJS | ExpressJS</td>
+                    </tr>                    
+                    <tr>
+                        <td>Databases</td>
+                        <td>MongoDB | MySQL | PostgreSQL | Firebase</td>
+                    </tr>
+                    <tr>
+                        <td>Tools & DevOps</td>
+                        <td>Git | Docker | AWS | Jira </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="project-section">
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+
+                <div class="project-card">
+                    <div>
+                        <p>November 7, 2024</p>
+                        <h4>YelpCamp</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NodeJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>ExpressJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>MongoDB</p>
+                            </div>
+
+                        </div>
+                        <p>A full-stack web app for finding, reviewing, and sharing campgrounds with user authentication, interactive maps, and a responsive design.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://yelp-camp-stevenliu595.vercel.app/">Live</a>
+                            <a target="_blank" href="https://github.com/stevenliu595/YelpCamp">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/web_portfolio/public/yelpcamp.png" alt="yelpcamp-thumbnail" />
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>July 14, 2021</p>
+                        <h4>RoboFriends</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>ReactJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>Tachyons</p>
+                            </div>
+                        </div>
+                        <p>A simple React app that displays a list of robot friends fetched from an API, allowing users to search and filter them in real time</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://stevenliu-robofriends.netlify.app/">Live</a>
+                            <a target="_blank" href="https://github.com/stevenliu595/RoboFriends">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="/web_portfolio/public/robofriends.png" alt="robofriends-thumbnail" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By Steven Liu</a> ⭐ the repo on <a target="" href="">GitHub</a></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

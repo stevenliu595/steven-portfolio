@@ -1,0 +1,139 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+main,
+footer {
+  max-width: 1300px; /* Increase the max width */
+  width: 90%; /* Make it responsive */
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  max-height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 1rem;
+}
+
+main,
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  gap: 4rem;
+}
+
+section {
+  gap: 1rem;
+}
+
+.intro-header p {
+  padding-top: 0.25rem;
+}
+
+.intro-description {
+  max-width: 500px;
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.links-container i {
+  margin-right: 1rem;
+}
+
+.link-arrow {
+  color: var(--color-link);
+  transform: rotate(-45deg);
+}
+
+.color-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cards-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  max-width: 800px; /* Prevents it from stretching too far */
+  width: 100%;
+  margin: 0.4rem 0;
+}
+
+.project-card p {
+  font-size: 0.8rem;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+.tech-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0.25rem 0;
+}
+
+.tech-list div {
+  padding: 0.1rem 0.5rem;
+  border-radius: var(--border-radius-small);
+}
+
+.tech-list p {
+  font-size: 0.7rem;
+}
+
+@media (min-width: 640px) {
+  .project-card {
+    flex-direction: row;
+  }
+
+  .project-card .img-div {
+    max-width: 30%;
+  }
+}
